@@ -13,8 +13,6 @@
 
 This mod upgrade the existing javacord 2.0.17 to javacord 3.8.0.
 
-This will fix discord issues regarding 
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Built Instructions
