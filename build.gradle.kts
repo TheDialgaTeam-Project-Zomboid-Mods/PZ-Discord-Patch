@@ -36,3 +36,7 @@ dependencies {
 
     implementation("org.javacord:javacord:3.8.0")
 }
+
+tasks.shadowJar {
+    archiveClassifier.set("")
+}
