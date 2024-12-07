@@ -32,11 +32,15 @@ CLI: `gradlew shadowJar`
 
 ## Installation
 
-1. Copy the build output `PZDiscordPatch-1.0.0.jar` into Project Zomboid Dedicated Server's java directory. <br />
+Note: This require root access to your Project Zomboid Dedicated Server directory. If you are using a hosting provider that host the PZ server for you, you are unable to do the installation as you can't change the classpath.
+
+1. Copy `PZDiscordPatch-1.0.0.jar` into Project Zomboid Dedicated Server's java directory. <br />
 For Windows: `C:/Program Files (x86)/Steam/steamapps/common/Project Zomboid Dedicated Server/java/`
 
-2. Edit the classpath to include `java/PZDiscordPatch-1.0.0.jar` at the beginning.
+2. Edit the classpath to include `java/PZDiscordPatch-1.0.0.jar` at the beginning. (For json file, please put it before `java/.` entry)
 
-3. Restart your server and check the console. If done right, it should complain about missing Logger implementation as PZ uses a custom Logger.
+3. Restart your server and check the console. If done right, it should complain about missing Log4j2 as Project Zomboid uses a custom Logger. (`org.javacord.core.util.logging.ExceptionLoggerDelegateImpl No Log4j2 compatible logger was found. Using default Javacord implementation!`)
+
+Note that you are required to enable the ___Message Content Intent___ for the bot that you have created. Otherwise discord module will not run.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
